@@ -321,8 +321,8 @@ class TSKDirectory(file_entry.Directory):
         if getattr(tsk_directory_entry.info, 'name', None) is not None:
           # Ignore file entries marked as "unallocated".
           flags = getattr(tsk_directory_entry.info.name, 'flags', 0)
-          if int(flags) & pytsk3.TSK_FS_NAME_FLAG_UNALLOC:
-            continue
+          #if int(flags) & pytsk3.TSK_FS_NAME_FLAG_UNALLOC:
+          #  continue
 
           directory_entry = getattr(tsk_directory_entry.info.name, 'name', '')
 

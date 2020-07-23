@@ -54,6 +54,9 @@ class TSKAnalyzerHelper(analyzer_helper.AnalyzerHelper):
 
     # YAFFS file system signature.
 
+    # Btrfs file system signature.
+    format_specification.AddNewSignature(b'_BHRfS_M', offset=65600)
+
     return format_specification
 
 
