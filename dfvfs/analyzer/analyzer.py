@@ -13,7 +13,7 @@ from dfvfs.resolver import resolver
 class Analyzer(object):
   """Format analyzer."""
 
-  _SCAN_BUFFER_SIZE = 60 * 1024
+  _SCAN_BUFFER_SIZE = 65 * 1024
 
   _analyzer_helpers = {}
 
